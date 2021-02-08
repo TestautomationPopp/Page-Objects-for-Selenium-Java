@@ -46,13 +46,13 @@ public class FirstTest{
         poTwsMain.checkFooter();
 
         // Execute the search by calling the function in the page object
-        poTwsMain.searchFor("Create a Cross-Browser-Test Selenium Java Project with automated WebDriver Download");
+        poTwsMain.searchFor("Cross-Browser Selenium Java with automated WebDriver Download");
 
         // Initialize the Search Result Page Object
         SearchResult poSearchResult = PageFactory.initElements(browser.driver, SearchResult.class);
         
-        Assert.assertEquals("Search Results for: Create a Cross-Browser-Test Selenium Java Project with automated WebDriver Download", poSearchResult.searchResultText.getText());
-        Assert.assertEquals("Create a Cross-Browser-Test Selenium Java Project with automated WebDriver Download", poSearchResult.firstResultHeader.getText());
+        Assert.assertEquals("Search Results for: Cross-Browser Selenium Java with automated WebDriver Download", poSearchResult.searchResultText.getText());
+        Assert.assertEquals("Cross-Browser Selenium Java with automated WebDriver Download", poSearchResult.firstResultHeader.getText());
         
     }
     
